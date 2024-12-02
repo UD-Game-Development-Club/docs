@@ -36,7 +36,7 @@ theme:
   features:
     - content.action.edit
     - content.action.view
-    - navigation.footer
+    # - navigation.footer
     - content.code.copy
     - content.code.select
     - search.suggest
@@ -103,4 +103,10 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-  - index.md
+  - Home: index.md
+  - Constitution: constitution.md
+  - Standards:
+      - Source Control:
+          - Standards/Source Control/git.md
+      - Unity:
+          - Standards/Unity/project_structure.md
