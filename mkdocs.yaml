@@ -1,0 +1,106 @@
+site_name: UD GDC docs
+site_url: https://UD-Game-Development-Club.github.io/docs/
+repo_url: https://github.com/UD-Game-Development-Club/docs
+edit_uri: edit/main/docs/
+theme:
+  language: en
+  direction: ltr
+  name: material
+  logo: assets/gdclogo.png
+  favicon: assets/gdclogo.png
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+    # tag:
+    #   lua: simple/lua
+    #   c: simple/c
+    #   engine: fontawesome/solid/gears
+    #   editor: fontawesome/solid/paint-roller
+  features:
+    - content.action.edit
+    - content.action.view
+    - navigation.footer
+    - content.code.copy
+    - content.code.select
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - navigation.indexes
+  font:
+    text: Noto Sans
+    code: Fira Code
+    # code: Roboto Mono
+
+extra:
+  # analytics:
+  #   provider: google
+  #   property: G-C10V5MEJ09
+  version:
+    provider: mike
+  social:
+    - icon: material/github
+      link: https://github.com/UD-Game-Development-Club
+  tags:
+    # lua: lua
+    # c: c
+    # engine: engine
+    # editor: editor
+  # consent:
+  #   title: Data Consent
+  #   description: >- 
+  #     This site sends requests to Github (for documentation metadata) and Google Analytics (for user traffic statistics). Feel free to opt out :)
+
+# copyright: >
+#   Copyright &copy; 2023 - 2024 Ryan Zmuda -
+#   <a href="#__consent">Change cookie settings</a>
+
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: UD-Game-Development-Club/docs
+      branch: main
+  # - tags:
+  #     tags_file: tags.md 
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - index.md
