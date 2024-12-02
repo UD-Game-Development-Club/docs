@@ -47,7 +47,7 @@ Membership is contingent on good conduct, and can be terminated at will by both 
 Grounds for removal of members may include:
 
 1. Violation of University Policy and/or Student Code of Conduct.
-2. Violation of organization’s standards and/or expectations.
+2. Violation of organizations standards and/or expectations.
 
 #### B. Process for Removal
 
@@ -109,7 +109,7 @@ In the event of a vacancy of the President before the expiration of a full term 
 
 ### Section 5. Changes in Officers
 
-Following elections, newly elected officers should be added to the officer section of the organization’s group page on 1850 within a day of elections having finished.
+Following elections, newly elected officers should be added to the officer section of the organizations group page on 1850 within a day of elections having finished.
 
 ### Section 6. Elections
 
