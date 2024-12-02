@@ -122,7 +122,7 @@ Following elections, newly elected officers should be added to the officer secti
 
 ## Article IV: Meetings
 
-### Section 1. Meetings Meetings
+### Section 1. Meetings
 
 - Business meetings shall be held on demand, as determined by the President.
 - Non-business meetings for the purpose of instruction, practice, or other activities shall be held on a regular interval, as determined by the President.
@@ -160,7 +160,7 @@ The University of Dayton Game Development Club considers hazing to be a most des
 
 ## Article VIII: Ratification
 
-This constitution was approved by the organization’s members on `TBD`.
+This constitution was approved by the organization and its members on `TBD`.
 
 President:
 
