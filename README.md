@@ -4,27 +4,20 @@ Internal Documentation
 
 ## Setup / Testing Locally
 
-### Install mkdocs-material
+First, step into a new virtual environment (the second command will differ based on your operating system, this is a good time to read up on virtual environments if you are unfamiliar ;) )
 
 ```bash
-pip install mkdocs-material
+python -m venv venv
+source venv/bin/activate
 ```
 
-### Install mkdocs extensions
+Then, install the dependencies
 
 ```bash
-pip install mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin
+pip install -r requirements.txt
 ```
 
 ### Run the local server
-
-#### Linux
-
-```bash
-mkdocs serve
-```
-
-#### Windows
 
 ```bash
 python -m mkdocs serve
@@ -32,13 +25,11 @@ python -m mkdocs serve
 
 ## Generating PDF of the Consitution
 
+First, follow the steps outlined above to setup the local dev environment.
+
 ### Install markdown2, wkhtmltopdf and pdfkit
 
 Download: <https://wkhtmltopdf.org/> (you might need to add it to your path on windows)
-
-```bash
-pip install pdfkit markdown2
-```
 
 ### Generate PDF
 
