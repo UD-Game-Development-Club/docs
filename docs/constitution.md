@@ -1,6 +1,6 @@
 # University of Dayton Game Development Club Constitution
 
-Date of Original Ratification: `TBD`
+Date of Original Ratification: `December, 2024`
 
 Date of Amendments: `N/A`
 
