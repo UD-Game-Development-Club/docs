@@ -16,7 +16,7 @@ Git commits should be short and focused, in the [Conventional Commits](https://w
 
 ## Branching
 
-Branches should be created per-feature, be named using [kebab-case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case), with a leading grouping token. These branch names should be kept extremely brief (like 4-5 non-token words MAX). Here are some examples, which show each grouping token:
+Branches should be created per-feature, and be named using [kebab-case](https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case), with a leading grouping token. These branch names should be kept extremely brief (like 4-5 non-token words MAX). Here are some examples, which show each grouping token:
 
 - `feat/awesome-new-feature` - This branch adds a new feature
 - `bug/fix-broken-thing` - This branch fixes a bug
@@ -26,3 +26,13 @@ Branches should be created per-feature, be named using [kebab-case](https://deve
 ## Reviewing & Merging
 
 The GDC requires at least one repo admin approval for merging into the `main` branch, to ensure the codebase remains clean and consistent. In times of dire need, admins have the capability to force merge, but should abstain unless necessary.
+
+## Tags
+
+For repos which require tags (like this very docs repo!), we use the [Semantic Versioning](https://semver.org/) format. This is a three-part version number, like `1.2.3`, where the parts are:
+
+- Major: Breaking changes
+- Minor: New features
+- Patch: Bug fixes
+
+For the actual body of the tag, prepend a "v" to the beginning of the version number, like `v1.2.3`.

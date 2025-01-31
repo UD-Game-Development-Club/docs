@@ -1,6 +1,6 @@
 # Project Structure
 
-The following is a general outline of the project structure for a Unity `Assets` directory:
+The following is a general outline of the GDC project structure for a Unity `Assets` directory:
 
 ```txt
 Assets/
