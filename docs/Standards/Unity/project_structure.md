@@ -1,72 +1,58 @@
-# Unity Project Structure Standards
+# Project Structure
 
-This document will go over the structure of your assets folder inside your unity project.
+The following is a general outline of the project structure for a Unity `Assets` directory:
 
-### Simpliefied Version:
-- Plugins
-- Prefabs
-- Resources
-  - Imported
-  - Materials
-    - Skybox
-    - Sprites
-  - Models
-  - Particles
-  - Shaders
-  - Audio
-    - AudioMixers
-    - Music
-    - SoundEffects
-- Scenes
-- Scripts
-  - Enemy
-  - Enviroment
-  - Interfaces
-  - Managers
-  - Player
-- Settings
+```txt
+Assets/
+├── Scenes/
+│   └── ...
+├── Plugins/
+│   └── ...
+├── Prefabs/
+│   └── ...
+├── Imported/
+│   └── ...
+├── Scripts/
+│   └── Global/
+│       └── ...
+├── Audio/
+│   ├── Music/
+│   │   └── ...
+│   ├── Effects/
+│   │   └── ...
+│   └── Mixers/
+│       └── ...
+└── Visual/
+    ├── Textures/
+    │   └── ...
+    ├── Materials/
+    │   └── ...
+    ├── Meshes/
+    │   └── ...
+    └── Sprites/
+        └── ...
+```
 
+| Folder                      | Explanation                                                                                                                                                                |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Assets                      | The root of the Unity project. Please try to avoid adding anything new here.                                                                                               |
+| Assets / Scenes             | A folder containing all of the `.unity` scene files in the project.                                                                                                        |
+| Assets / Plugins            | Any 3rd party (asset store or otherwise) editor plugins, or tools. For example, something like [Unity Hot Reload](https://hotreload.net/) would be imported here.          |
+| Assets / Prefabs            | This folder stores prefabs used in the project, but should ideally contain many subfolders to compartmentalize them. Please do not just throw ***everything*** into this!  |
+| Assets / Imported           | Sometimes, you want to import something from the asset store, but you're too lazy to categorize it; that goes here. Please try to avoid using this as much as possible :_) |
+| Assets / Scripts            | The top level of the scripts directory, feel free to add any new sub-folders here, but try not to put scripts in this top level directory.                                 |
+| Assets / Scripts / Global   | This is an example of a sub-folder for scripts, which could be used for any systems that affect the entire game (ex: a pause screen controller script).                    |
+| Assets / Audio              | Do not put loose files into this, please create sub-directories as needed.                                                                                                 |
+| Assets / Audio / Music      | Music!                                                                                                                                                                     |
+| Assets / Audio / Effects    | Sound Effects!                                                                                                                                                             |
+| Assets / Audio / Mixers     | Any audio mixers used throughout the game.                                                                                                                                 |
+| Assets / Visual / Textures  | Textures! (Loose image files)                                                                                                                                              |
+| Assets / Visual / Materials | Materials!                                                                                                                                                                 |
+| Assets / Visual / Meshes    | 3D Meshes                                                                                                                                                                  |
+| Assets / Visual / Sprites   | Any 2D sprites used in the game.                                                                                                                                           |
 
-### Detailed Version:
-- Plugins
-  > Any plugins or extra utilities you add to the unity project go here.
-- Prefabs
-  > Prefabs that need to be used frequently, are summoned a lot of times, or are very important should be stored here. (Ex: SoundFXManager, GamePlayManager, Bullet, Enemy)
-- Resources
-  - Imported
-    > Any asset bundles you import as a group go in this folder. If you are importing a single asset, store it in a more appropriate Resources folder
-  - Materials
-    > Where you store any non-specific mat files. If you have a mataterial to only be used on one object, like a person, then store it with the model.
-    - Skybox
-      > Skybox materials separated to here for easy access.
-    - Sprites
-      > Any 2D images or sprites get stored here.
-  - Models
-    > All models go here, each model group gets a separate folder with all its neccesary files. For example, a car would go in one folder and then any material that belong with it would join it. If multiple models can use the same material, then you can put multiple models in 1 folder. For example, a model for a barrel and a box could possibly use the same material.
-  - Particles
-    > Any particles made with the unity particle system get stored here.
-  - Shaders
-    > All shaders get stored here, if a shader needs multiple files then create a folder for it.
-  - Audio
-    - AudioMixers
-      > Audio mixers and managers go here.
-    - Music
-      > All Music or jingles goes here.
-    - SoundEffects
-      > Separate sound effects based on use. For example, a "FordF150SoundEffects" folder would have all sounds a Ford F150 would make. A "RyuSoundEffects" folder would have all sounds that the fighting characeter Ryu would make.
-- Scenes
-  > Any Scenes needed for the game go here.
-- Scripts
-  > Scripts folders may change depending on your game, you may not need an enemy folder, and you may need other scripts such as vehicle folder, or an item folder.
-  - Enemy
-    > Scripts for the enemies of the game, could be enemie AI for example.
-  - Enviroment
-    > Scripts for Enviromental objects
-  - Interfaces
-    > Scripts for interfaces which could include things like your UI
-  - Managers
-    > Scripts for manager objects such as a GamePlayManager or SoundFXManager
-  - Player
-    > Scripts directly involving the player.
-- Settings
-  > Stores unity settings and such, be careful about storing anything in this folder, leave it mostly for Unity to autopopulate.
+## But what if this isn't enough???
+
+I'm glad you asked! Feel free to addend new categories or sub-categories as needed; so long as you aren't making a mess of things!
+
+Please try to keep the structure as clean and readable as possible. Ideally, it should be intuitive to find any resource in the project. If things start getting confusing, it's probably time to re-evaluate your approach!
