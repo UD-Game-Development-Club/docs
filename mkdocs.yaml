@@ -105,6 +105,8 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Constitution: constitution.md
+  - How To:
+    - How To/server.md
   - Standards:
       - Source Control:
           - Standards/Source Control/git.md
