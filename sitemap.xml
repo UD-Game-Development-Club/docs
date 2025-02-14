@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://UD-Game-Development-Club.github.io/docs/</loc>
-         <lastmod>2025-01-31</lastmod>
+         <lastmod>2025-02-14</lastmod>
     </url>
     <url>
          <loc>https://UD-Game-Development-Club.github.io/docs/constitution/</loc>
-         <lastmod>2025-01-31</lastmod>
+         <lastmod>2025-02-14</lastmod>
+    </url>
+    <url>
+         <loc>https://UD-Game-Development-Club.github.io/docs/How%20To/server/</loc>
+         <lastmod>2025-02-14</lastmod>
     </url>
     <url>
          <loc>https://UD-Game-Development-Club.github.io/docs/Standards/Source%20Control/git/</loc>
-         <lastmod>2025-01-31</lastmod>
+         <lastmod>2025-02-14</lastmod>
     </url>
     <url>
          <loc>https://UD-Game-Development-Club.github.io/docs/Standards/Unity/project_structure/</loc>
-         <lastmod>2025-01-31</lastmod>
+         <lastmod>2025-02-14</lastmod>
     </url>
     <url>
          <loc>https://UD-Game-Development-Club.github.io/docs/Standards/Unity/unity/</loc>
-         <lastmod>2025-01-31</lastmod>
+         <lastmod>2025-02-14</lastmod>
     </url>
 </urlset>
