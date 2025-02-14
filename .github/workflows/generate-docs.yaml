@@ -1,8 +1,8 @@
 name: Generate and push mkdocs-material
 on:
     push:
-        tags:        
-            - '**' # Push events to all tags
+        branches:        
+            - main
 
 permissions:
     contents: write
@@ -39,5 +39,4 @@ jobs:
             mkdocs-git-committers-plugin-2 \
             mkdocs-git-revision-date-localized-plugin \
 
-      - name: deploy
-        run: mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
+      - run: mkdocs gh-deploy --force
