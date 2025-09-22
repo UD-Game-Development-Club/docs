@@ -1,6 +1,6 @@
-# Project Structure
+# 2D Game Project Structure
 
-For Godot, the approach that we are taking for project structure is to place assets as close as possible to the object that is using it
+For Godot, the approach that we are taking for project structure is to place assets as close as possible to the object that is using it. This makes the project much more scalable.
 
 Below is an example that showcases this principle:
 
