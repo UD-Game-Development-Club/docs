@@ -113,3 +113,6 @@ nav:
       - Unity:
           - Standards/Unity/unity.md
           - Standards/Unity/project_structure.md
+      - Godot:
+          - Standards/Godot/godot.md
+          - Standards/Godot/project_structure.md
